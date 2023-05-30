@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 53px 215px 223px 150px;
+  padding: 53px 215px 150px 150px;
 
   &-navigation {
     font-family: "Source Sans Pro";
@@ -71,16 +71,17 @@
 .swiper {
   width: 100vh;
   height: 350px;
-  
+
+
 }
 
 .header-swiper {
   text-align: center;
   width: 100%;
 }
-.swiper-slide {
+.sheader__swiper-slide {
   width: 100%;
-  background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+  
 }
 
 .header__swiper-content-block {
@@ -97,7 +98,7 @@
   font-size: 80px;
   line-height: 98px;
   letter-spacing: 0.1em;
-  color: #e08c8c;
+  color: #FFFFFF;;
 }
 
 .header__swiper-text {
@@ -108,7 +109,7 @@
   line-height: 22px;
 
   letter-spacing: 0.3em;
-  color: #aa2121;
+  color: #FFFFFF;;
 }
 
 
@@ -124,6 +125,7 @@
   border-radius: 50%;
   background: none;
   margin-top: 52px !important;
+  z-index: 2;
 }
 
 .header-swiper-pagination .swiper-pagination-bullet-active {

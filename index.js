@@ -1,13 +1,14 @@
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.header__swiper', {
   loop: true,
-	direction: "vertical", 
+  direction: 'vertical',
   pagination: {
     el: '.header-swiper-pagination',
-		clickable: "true",
+    clickable: true,
   },
 });
+
 
 
 
