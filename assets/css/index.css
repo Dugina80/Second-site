@@ -1,4 +1,4 @@
-.page_content {
+.wrapper {
   margin: 0 auto;
   min-width: 100vh;
   max-width: 1600px;
@@ -288,11 +288,11 @@
 }
 
 .news {
-  max-width: 1600px;
+  width: 100%;
   height: 975px;
   background-image: url("/img/Background.jpg");
+  background-repeat: no-repeat;
   position: relative;
-  left: 0;
 }
 
 .news-title {
@@ -427,8 +427,8 @@
 
 .swiper-button-next-svg {
   position: absolute;
-  top: 58%;
-  right: 5%;
+  top: 60%;
+  margin-left: 85%;
 }
 
 .gallery {
@@ -438,7 +438,7 @@
 }
 
 .gallery-grid {
-  margin-left: 215px;
+  padding-left: 215px;
   width: 100vh;
   display: -ms-grid;
   display: grid;
@@ -506,7 +506,7 @@
 }
 
 .footer-block {
-  max-width: 100%;
+  max-width: 100vh;
   height: 549px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,7 +517,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 384px;
+  gap: 400px;
 }
 .footer-block-social {
   display: -webkit-box;
@@ -531,8 +531,8 @@
   padding-left: 160px;
   position: relative;
   max-height: 549px;
-  background: url("/img/Background-map.png");
-  background-repeat: no-repeat;
+  background: url("/img/Background-map.png") left top no-repeat;
+  background-size: calc(100% - 160px) auto;
 }
 .footer-title {
   text-align: center;
@@ -621,8 +621,9 @@
 .modal-content {
   margin-left: 20px;
   text-align: center;
-  border: 0.5px dashed rgb(138, 138, 237);
+  border: 1px dashed rgb(37, 37, 68);
   padding: 5px;
+  background-color: #b6a4f6;
 }
 .modal-content p {
   font-family: "Open Sans";
