@@ -157,6 +157,8 @@
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  max-width: 100%;
+  padding-left: 160px;
 }
 
 .projects {
@@ -412,6 +414,23 @@
   background: rgb(134, 161, 241);
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-prev-svg {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.swiper-button-next-svg {
+  position: absolute;
+  top: 58%;
+  right: 5%;
+}
+
 .gallery {
   width: 100%;
   position: relative;
@@ -483,11 +502,11 @@
 
 #map {
   height: 700px;
-  width: 1600px;
+  max-width: 1600px;
 }
 
 .footer-block {
-  width: 1600px;
+  max-width: 100%;
   height: 549px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,6 +527,8 @@
 }
 
 .footer {
+  max-width: 100%;
+  padding-left: 160px;
   position: relative;
   max-height: 549px;
   background: url("/img/Background-map.png");

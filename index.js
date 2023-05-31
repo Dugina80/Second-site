@@ -46,8 +46,8 @@ new Swiper(".news-swiper", {
     spaceBetween: 30,
   
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-prev-svg',
+        prevEl: '.swiper-button-next-svg',
       },
       pagination: {
         el: ".swiper-pagination",
