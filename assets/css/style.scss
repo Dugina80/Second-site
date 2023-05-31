@@ -6,7 +6,9 @@
 
 .page_header {
   position: relative;
-  width: 100%;
+  max-width: 1600px;
+  top: 0;
+  left: 0;
   height: 800px;
   overflow: hidden;
   background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
@@ -71,17 +73,14 @@
 .swiper {
   width: 100vh;
   height: 350px;
-
-
 }
 
 .header-swiper {
   text-align: center;
   width: 100%;
 }
-.sheader__swiper-slide {
+.header__swiper-slide {
   width: 100%;
-  
 }
 
 .header__swiper-content-block {
@@ -98,7 +97,7 @@
   font-size: 80px;
   line-height: 98px;
   letter-spacing: 0.1em;
-  color: #FFFFFF;;
+  color: #ffffff;
 }
 
 .header__swiper-text {
@@ -107,11 +106,9 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-
   letter-spacing: 0.3em;
-  color: #FFFFFF;;
+  color: #ffffff;
 }
-
 
 .header-swiper-pagination {
   margin-right: 5%;
@@ -132,26 +129,16 @@
   background: white;
 }
 
-
-/*.heading-circle {
-  margin: 0 auto;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #ffffff;
-
-  svg {
-    margin-top: 40%;
-  }
-}*/
-
-.link {
-  cursor: pointer;
+.header__arrow-icon {
+  text-align: center;
 }
 
 .main-content {
   flex: 1 1 auto;
-  max-width: 1600px;
+}
+
+.projects {
+  margin: 0 auto;
 }
 
 .title {
@@ -256,7 +243,6 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-
   color: #000000;
 }
 
@@ -278,11 +264,11 @@
 }
 
 .news {
-  width: 100%;
+  max-width: 1600px;
   height: 975px;
   background-image: url("/img/Background.jpg");
-  background-repeat: no-repeat;
   position: relative;
+  left: 0;
 }
 
 .news-title {
@@ -318,9 +304,12 @@
   gap: 30px;
 }
 
+.news-card {
+  background: #ffffff;
+}
+
 .swiper-slide {
   height: 100%;
-  background: #ffffff;
 }
 
 .news-info {
@@ -378,30 +367,25 @@
   width: 100%;
 }
 
-
-
 .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: white;
   opacity: 0.5;
   border-radius: 50%;
-  margin-right: 40px !important; 
-
+  margin-right: 40px !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet:last-child {
-  margin-right: 0; 
+  margin-right: 0;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background: rgb(134, 161, 241);
 }
 
-
 .gallery {
   width: 100%;
-
   position: relative;
   margin-bottom: 150px;
 }

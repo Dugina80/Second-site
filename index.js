@@ -9,7 +9,35 @@ const swiper = new Swiper('.header__swiper', {
   },
 });
 
-
+function moveTo(type) {
+  
+ 
+  if(type === 'about') {
+   const scroll = document.getElementsByClassName("header__swiper swiper");
+     scroll[0].scrollIntoView({behavior: "smooth"});
+  }
+ 
+  if(type === 'projects') {
+   const scroll = document.getElementsByClassName("projects");
+      scroll[0].scrollIntoView({behavior: "smooth"});
+  }
+ 
+  if(type === 'news') {
+   const scroll = document.getElementsByClassName("news");
+   scroll[0].scrollIntoView({behavior: "smooth"});
+  }
+ 
+  if(type === 'contact') {
+   const scroll = document.getElementsByClassName("footer");
+  scroll[0].scrollIntoView({behavior: "smooth"});
+  }
+ 
+  if(type === 'arrow') {
+   const scroll = document.getElementsByClassName("projects");
+   scroll[0].scrollIntoView({behavior: "smooth"});
+   return moveTo(type)
+  }
+ }
 
 
 new Swiper(".news-swiper", {
